@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p>Enter your &nbsp<span id="element"></span></p>
+        <input type="text" placeholder="TEXT or URL" id="qr-text">
+
+        <div id="img-box">
+            <img src=""id="qr-img" alt="">
+        </div>
+
+        <button class="btn">Gen QR Code</button>
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+      <!-- Element to contain animated typing -->
+  <!-- <span id="element"></span> -->
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+        strings:["TEXT","URL"],
+    //   strings: ['TEXT', 'URL','TEXT', 'URL','TEXT', 'URL','TEXT', 'URL'],
+      typeSpeed: 200,
+      loop: true
+    });
+  </script>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
